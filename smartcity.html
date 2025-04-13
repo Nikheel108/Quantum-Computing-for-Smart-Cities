@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartGuard - Quantum Security for Smart Cities</title>
+  <style>
+    :root {
+      --main-gradient: linear-gradient(135deg, #cceeff, #e6fffa);
+      --section-gradient: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      --accent-color: #2b7a78;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--main-gradient);
+      color: #333;
+      line-height: 1.6;
+    }
+    .sdg-logo {
+      width: 80px;
+      position: fixed;
+      top: 10px;
+      left: 40px;
+      border-radius: 10px;
+      z-index: 999;
+      animation: pulse 3s infinite ease-in-out;
+    }
+    header {
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+      color: #ffffff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    header h1 {
+      font-size: 3rem;
+      animation: slideIn 3s ease-out;
+      color: #ffffff;
+    }
+    header p {
+      color: #f0f0f0;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2.5rem;
+      padding: 2rem;
+      border-radius: 10px;
+      background: var(--section-gradient);
+      color: #2f3640;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    section h2 {
+      color: #273c75;
+      border-bottom: 3px solid #44bd32;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .image-full {
+      width: 100%;
+      margin: 2.5rem 0;
+      padding: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .image-full img {
+      width: 100%;
+      height: 500px; /* or 100vh for full screen */
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
+    }
+    .section-flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+    .section-img {
+      flex: 1 1 40%;
+      max-width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .section-flex div {
+      flex: 1 1 55%;
+    }
+    .icon {
+      width: 36px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f0f0f0;
+      font-size: 1rem;
+      color: #555;
+    }
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateY(-60px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 3rem;
+      }
+      section {
+        padding: 1.5rem;
+      }
+      .section-flex {
+        flex-direction: column;
+      }
+      .section-img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="sdg-logo.png" alt="SDG Logo" class="sdg-logo">
+
+  <header>
+    <h1> SmartGuard </h1>
+    <h1>( Quantum Computing for Smart Cities )</h1>
+    <p>By Nikheel C Khadakabhavi | CS7-35 | PRN: 202401110020 </p>
+  </header>
+
+  <div class="container">
+    <section class="intro section-flex" style="font-size: 1.1rem;">
+      <img src="intro-quantum.WEBP" class="section-img" alt="Quantum Tech">
+      <div>
+        <h2><img src="quantum-icon.png" class="icon">Introduction</h2>
+        <p>Quantum computing represents a revolutionary leap in processing power, using quantum bits (qubits) to solve complex problems faster than classical computers. As urban areas evolve into smart cities, managing vast networks of devices, infrastructure, and data securely becomes a monumental challenge. This project explores how quantum computing can enhance the security and resilience of these smart ecosystems.</p>
+      </div>
+    </section>
+
+    <section class="need section-flex" style="font-size: 1.1rem; flex-direction: row-reverse;">
+      <img src="need-security.jpg" class="section-img" alt="Need for Security">
+      <div>
+        <h2><img src="lock-icon.png" class="icon">Need for the Solution</h2>
+        <p>Smart cities depend on interconnected IoT devices, from traffic systems to energy grids. These systems are vulnerable to cyberattacks. Classical encryption methods may soon become obsolete with the advent of quantum hacking capabilities. There's a pressing need for quantum-resilient security frameworks to protect urban data and services.</p>
+      </div>
+    </section>
+
+    <section class="problem section-flex" style="font-size: 1.15rem;">
+      <img src="problem-grid.png" class="section-img" alt="Vulnerable Infrastructure">
+      <div>
+        <h2>Problem Area</h2>
+        <p>The lack of quantum-safe infrastructure in smart cities poses a significant threat to urban security. From traffic signal manipulation to critical infrastructure shutdowns, potential breaches could cause chaos, endanger lives, and compromise privacy.</p>
+      </div>
+    </section>
+
+    <section class="solution section-flex" style="font-size: 1.2rem; flex-direction: row-reverse;">
+      <img src="solution-quantum-secure.jpg" class="section-img" alt="Quantum Solution">
+      <div>
+        <h2>Proposed Solution</h2>
+        <p>SmartGuard proposes a hybrid quantum architecture that integrates Quantum Key Distribution (QKD) and post-quantum cryptography into smart city networks. This includes quantum-secure communication channels between public services, encrypted IoT data transmissions, and real-time threat analysis powered by quantum algorithms.</p>
+      </div>
+    </section>
+
+    <section class="benefits section-flex" style="font-size: 1.1rem;">
+      <img src="benefits-impact.jpeg" class="section-img" alt="Benefits">
+      <div>
+        <h2>Effectiveness & Benefits</h2>
+        <ul>
+          <li>Ultra-secure communication between government and public services</li>
+          <li>Resilience against future quantum cyber threats</li>
+          <li>Improved trust and safety in public infrastructure</li>
+          <li>Alignment with Sustainable Development Goals (SDG-11: Sustainable Cities and Communities)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="image-full">
+      <h2>Visual Concept</h2>
+      <img src="smart-city.jpg" alt="Smart City Image">
+    </section>
+
+    <section class="conclusion section-flex" style="font-size: 1.15rem; flex-direction: row-reverse;">
+      <img src="conclusion-future.WEBP" class="section-img" alt="Future Concept">
+      <div>
+        <h2>Conclusion</h2>
+        <p>As quantum technology advances, it's critical that we rethink the cybersecurity foundations of our cities. SmartGuard offers a visionary yet practical approach to securing urban environments for the digital age. Integrating quantum computing now can save future cities from catastrophic security failures.</p>
+      </div>
+    </section>
+
+    <section class="references">
+      <h2>References</h2>
+      <ul>
+        <li><a href="https://www.sciencedirect.com/science/article/pii/S0164121224002061" target="_blank">Hybrid quantum architecture for smart city security</a></li>
+        <li><a href="https://www.ibm.com/quantum/" target="_blank">IBM Quantum</a></li>
+        <li><a href="https://builtin.com/hardware/quantum-computing-applications" target="_blank">Quantum Computing Applications</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p style="margin-top: 0.5rem; font-style: italic; color: #888;">
+      🚀 Let's shape the future — one quantum-secured city at a time.
+    </p>
+
+  </footer>
+</body>
+</html>
